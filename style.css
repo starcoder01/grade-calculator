@@ -1,0 +1,270 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-image: url('background.jpg');
+}
+
+.calculator{
+    background-color: black;
+    width:50%;
+    border-radius:20px;
+    margin:400px auto;
+    display:flex;
+    justify-content:space-between;    
+}
+
+.calc-content{
+    color:rgb(6, 243, 164);
+    font-size:30px;
+    display: flex;
+    align-items:center;
+    padding:50px;
+}
+
+.calc{
+    padding:30px;
+    color:rgb(6, 243, 164);
+    font-size:20px;
+    display:block;
+}
+
+input{
+    height:40px;
+    color:black;
+    font-size:15px;
+    font-weight: 300;
+    margin:15px;
+    padding:2px;
+    border-style: none;
+}
+
+.button{
+    background-color:rgb(24, 224, 158);
+    color:black;
+    padding:10px;
+    margin-left:40px;
+}
+
+#result{
+    font-size:30px;
+}
+
+.blink {
+    animation: blink 0.5s infinite;
+  }
+
+@keyframes blink{
+    to { opacity: .0; }
+}
+
+.text-type{
+    position: absolute;
+    top:5%;
+    left:30%;
+    font-size:40px;
+    color:white;
+}
+
+.flex{
+    display: flex;
+    position: absolute;
+    top:15%;
+    left:40%;
+}
+
+.header-sub-title {
+    color:red;
+    font-size:40px;
+    font-weight: 300;
+}
+
+
+@media screen and (max-width:300px)
+{
+    .calculator{
+        width:90%;
+        flex-direction: column;
+        margin:300px auto;
+        display:block;
+    }
+
+    .calc-content{
+        display:block;
+        font-size:30px;
+        margin:0;
+    }
+
+    .calc{
+        font-size:15px;
+        display:block;
+        padding-left: 20px;    
+    }
+    
+    input{
+        height:30px;
+        font-size:15px;
+        margin:15px;
+    }
+    
+    #result{
+        font-size:20px;    
+    }
+
+    .text-type{
+        top:5%;
+        left:30%;
+        font-size:25px;
+    }
+    
+    .flex{
+        top:18%;
+        left:40%;
+    }
+    
+    .header-sub-title {
+        font-size:30px;
+    }
+}
+
+@media screen and (min-width:301px) and (max-width:400px)
+{
+    .calculator{
+        width:90%;
+        flex-direction: column;
+        margin:300px auto;
+        display:block;
+    }
+
+    .calc-content{
+        display:block;
+        font-size:35px;
+        margin:0;
+    }
+
+    .calc{
+        font-size:15px;
+        display:block;
+        margin:auto;
+    }
+    
+    input{
+        height:30px;
+        font-size:15px;
+        margin-left:50px;
+    }
+
+    .button{
+        margin-left: 50px;
+    }
+
+    #result{
+        margin-left:50px;
+        font-size:20px;
+    }
+    
+    .text-type{
+        top:5%;
+        left:30%;
+        font-size:25px;
+    }
+    
+    .flex{
+        top:18%;
+        left:40%;
+    }
+    
+    .header-sub-title {
+        font-size:30px;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:750px)
+{
+    .calculator{
+        width:90%;
+        flex-direction: column;
+        margin:300px auto;
+        display:block;
+    }
+
+    .calc-content{
+        display:block;
+        font-size:35px;
+        margin:0;
+    }
+
+    .calc{
+        font-size:15px;
+        display:block;
+        margin:auto;
+    }
+    
+    input{
+        height:30px;
+        font-size:15px;
+        margin-left:100px;
+    }
+
+    .button{
+        margin-left: 100px;
+    }
+
+    #result{
+        margin-left:80px;
+        font-size:25px;
+    }
+    
+    .text-type{
+        top:5%;
+        left:30%;
+        font-size:25px;
+    }
+    
+    .flex{
+        top:18%;
+        left:40%;
+    }
+    
+    .header-sub-title {
+        font-size:30px;
+    }
+}
+
+@media screen and (min-width:751px)
+{
+    .calculator{
+        width:80%;
+    }
+
+    .calc-input{
+        width:30%;
+    }
+
+    .calc{
+        width:60%;
+        font-size:15px;
+    }
+    
+    input{
+        height:30px;
+        font-size:15px;
+        margin:15px;
+    }
+    
+    .text-type{
+        top:5%;
+        left:30%;
+        font-size:40px;
+    }
+    
+    .flex{
+        top:15%;
+        left:40%;
+    }
+    
+    .header-sub-title {
+        font-size:40px;
+    }
+}
