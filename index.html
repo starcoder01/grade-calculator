@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grade Calculator</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css">
+        <!-- cdn link to activate fontawesome -->
+        <script src="https://kit.fontawesome.com/53c74d146a.js" crossorigin="anonymous"></script>
+        <!-- bootstrap cdn link  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+    </head>
+
+    <body>
+        <p class="text-type">Welcome, Check your </p>
+        <div class="flex">
+            <p class="header-sub-title" id="word"></p><p class="header-sub-title blink">|</p>
+        </div>
+
+        <script src="myscript.js"></script>
+
+        <div class="calculator">
+            <div class="calc-content">
+                <p id="calc-text">STUDENT GRADE CALCULATOR</p>
+            </div>
+
+            <div class="calc">
+                <input type="text" placeholder="WEB PROGRAMMING" id="wb" ><br>
+                <input type="text" placeholder="DATA STRUCTURES" id="ds" ><br>
+                <input type="text" placeholder="MATHS" id="mth" ><br>
+                <input type="text" placeholder="ENGLISH" id="eng" ><br>
+
+                <input type="button" onclick="calc()" class="button" value="showPercentage">
+                <div><p id="result"></p></div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
